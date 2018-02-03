@@ -2,7 +2,7 @@
 
 A simple example with CSS code shown.
 
-`:root` is often used to declare CSS Custom Properties or "variables" that become available throughout the document, for example:
+`:root` is often used to declare CSS Custom Properties or "variables" to make them available throughout the document, for example:
 
 ```CSS
 :root {
@@ -20,11 +20,11 @@ article h3 {
 }
 ```
 
-Any element can be used (not just the `:root` pseudo-element), so if you want to access your CSS variables in child elements, you need to use their parent element as the selector e.g. using `html` or `body` will also allow any element on the page to have access to your CSS variables.
+However, **any element** can be used as the selector for CSS Custom Properties (not just the `:root` pseudo-element), but if you want access to them for child elements, you need to use their *parent element* as the selector, so `html` or `body` as the selectors for your CSS variables will also allow *any element on the page* to have access to them.
 
 Custom Properties are obviously not limited to colours.
 
-Bad: no IE support, but Edge is taking over, so let's wait for IE to die completely or use a fallback.
+**Bad:** no IE support, but Edge is taking over, so let's wait for IE to die completely or use a fallback.
 
 ## References:
 
