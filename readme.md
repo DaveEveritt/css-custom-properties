@@ -20,7 +20,7 @@ article h3 {
 }
 ```
 
-However, **any element** can be used as the selector for CSS Custom Properties (not just the `:root` pseudo-element), but if you want access to them for child elements, you need to use their *parent element* as the selector, so `html` or `body` as the selectors for your CSS variables will also allow *any element on the page* to have access to them.
+However, **any element** can be used as the selector for CSS Custom Properties (not just the `:root` pseudo-element), but if you want access to them for child elements, you need to use their *parent element* as the selector, so `html` or `body` as the selectors for your CSS variables will also allow *any element on the page* to have access to them. For an example, [see the GitHub page for this repo](https://daveeveritt.github.io/css-custom-properties/).
 
 Custom Properties are obviously not limited to colours.
 
