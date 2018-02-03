@@ -1,0 +1,20 @@
+html {
+  --darkGreen: #5c8;
+  --myPink: #fce;
+  --myBorder: 4px solid var(--myPink);
+  --myCodeColor: #88f;
+}
+
+section {
+  color: var(--darkGreen);
+  background: var(--myPink);
+}
+
+article h3 {
+  color: var(--darkGreen);
+  border-bottom: var(--myBorder);
+}
+
+code {
+  color: var(--myCodeColor);
+}

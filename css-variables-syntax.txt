@@ -1,0 +1,28 @@
+# :root can be used to declare CSS variables
+
+in case anyone finds this old question and needs the information, `:root` is often used to declare CSS Custom Properties or "variables" that become available throughout the document, for example:
+
+    :root {
+      --darkGreen: #051;
+      --myPink: #fce;
+    }
+    
+    section {
+      color: var(--darkGreen);
+      background: var(--myPink);
+    }
+
+    article h3 {
+      color: var(--darkGreen);
+    }
+
+Exciting, yes? Especially as not limited to colours, or to the `:root` selector. Bad: no IE support, but Edge is taking over, so let's wait for IE to die completely or use a fallback.
+
+## References:
+
+- [Using CSS custom properties (variables)](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables) . 
+- [CSS Variables: Why Should You Care?](https://developers.google.com/web/updates/2016/02/css-variables-why-should-you-care)
+- [Let's Talk about CSS Variables (explains why `--`, not `$`)](https://www.xanthir.com/blog/b4KT0)
+
+---
+My answer to "https://stackoverflow.com/questions/3916824/what-is-the-css-html-root-element/" on StackOverflow: https://stackoverflow.com/a/48597520/123033
